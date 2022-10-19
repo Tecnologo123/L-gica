@@ -64,11 +64,46 @@ function calcular2() {
     if (ganhobs > gastosemestral) {
         window.alert(`A empresa teve um ganho bruto semestral de ${ganhobs}
                     reais ,ou, seja teve lucro.`)
-    }else if{
+    }else if (ganhobs < gastosemestral) {
         window.alert(`A empresa teve um gasto semestral de ${gastosemestral}
                     reais ,ou seja, teve prejuízo.`)           
     }else {
         window.alert(`A empresa não teve lucro nem prejuízo.`)
+    }
+}
+
+function calcular3() {
+    var horastrb = Number(window.prompt('Digite o número de horas trabalhadas em uma semana:'))
+    var salhora = Number(window.prompt('Digite o sálario ganho por hora:'))
+    
+    if (horastrb <= 40) {
+        window.alert(`Essa pessoa não fez hora extra, então o salário dela é de ${horastrb * salhora} reais`)
+    }else if (horastrb > 40) {
+
+    var horasextras = horastrb - 40
+        window.alert(`A quantidade de horas extras é ${horasextras}`)
+
+    var horas = salhora*1.5
+        window.alert(`O valor que ele ganhou por hora extra é ${horas}`) 
+
+    var ganhohorasextras = horasextras * horas 
+        window.alert(`O valor total que essa pessoa ganhou é ${ganhohorasextras} reais`)
+
+    var ganhototal = horastrb + ganhohorasextras
+    }else {
+        window.alert(`Opção inválida`)
+    }
+    
+}
+
+function calcular4() {
+    var roupa =(window.prompt('Você pretende comprar uma roupa Masculina ou Feminina ?'))
+    var opcao = Number(window.prompt('Escolha uma opção: \n 1)Calça \n 2)Suéter \n 3)Vestido \n 4)Saia '));
+
+    switch (opcao) {
+        case 1 :
+            resultado = roupa
+            window.alert(`Se você escolheu uma calça então o tipo de roupa que você comprou é ${resultado} `)
     }
 }
 
