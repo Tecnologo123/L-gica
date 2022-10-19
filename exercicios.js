@@ -87,9 +87,13 @@ function calcular3() {
         window.alert(`O valor que ele ganhou por hora extra é ${horas}`) 
 
     var ganhohorasextras = horasextras * horas 
-        window.alert(`O valor total que essa pessoa ganhou é ${ganhohorasextras} reais`)
+        window.alert(`O valor total de horas extras que essa pessoa ganhou é ${ganhohorasextras} reais`)
 
-    var ganhototal = horastrb + ganhohorasextras
+    var hora = 40 * salhora
+        window.alert(`O valor de 40 horas trabalhadas é ${hora}`)     
+
+    var ganhototal = hora + ganhohorasextras
+        window.alert(`O valor total que essa pessoa ganhou é ${ganhototal}`)
     }else {
         window.alert(`Opção inválida`)
     }
@@ -97,14 +101,32 @@ function calcular3() {
 }
 
 function calcular4() {
-    var roupa =(window.prompt('Você pretende comprar uma roupa Masculina ou Feminina ?'))
-    var opcao = Number(window.prompt('Escolha uma opção: \n 1)Calça \n 2)Suéter \n 3)Vestido \n 4)Saia '));
+    var roupa = (window.prompt('Você pretende comprar uma roupa Masculina ou Feminina ?'))
+    
+    if (roupa = maculina) {
+        window.alert(`A roupa que você escolheu é ${masculina}`)
 
-    switch (opcao) {
-        case 1 :
-            resultado = roupa
-            window.alert(`Se você escolheu uma calça então o tipo de roupa que você comprou é ${resultado} `)
+        var opcao = Number(window.prompt('Escolha uma opção de roupa Masculina: \n 1)Calça \n  2)Suéter'));
+
+        switch (opcao) {
+            case 1 :
+                resultado = n1 + n2
+                window.alert(`O resultado da soma é ${resultado}`)
+                break
+            case 2 :
+                resultado = n1 * n2 
+                window.alert(`O resultado da multiplicação é ${resultado}`)
+                break
+            default :
+                window.alert(`Opção inválida`)
+                break
+        }
+    }else if (roupa = feminina) {
+        window.prompt(`Que tipo de roupa você pretende comprar ?`)
+    }else {
+        window.prompt(`Opção inválida`)
     }
+  
 }
 
 // E - &&
