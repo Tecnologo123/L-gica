@@ -103,28 +103,47 @@ function calcular3() {
 function calcular4() {
     var roupa = (window.prompt('Você pretende comprar uma roupa Masculina ou Feminina ?'))
     
-    if (roupa = maculina) {
-        window.alert(`A roupa que você escolheu é ${masculina}`)
-
-        var opcao = Number(window.prompt('Escolha uma opção de roupa Masculina: \n 1)Calça \n  2)Suéter'));
-
+    
+    if (roupa == 'Masculina') {
+        window.alert(`Você escolheu a roupa Masculina`)
+    
+         var opcao = Number(window.prompt('Escolha uma opção de roupa Masculina: \n [1]Calça \n [2]Suéter'))
+    
         switch (opcao) {
-            case 1 :
-                resultado = n1 + n2
-                window.alert(`O resultado da soma é ${resultado}`)
+            case 1:
+                masculina = 'Calça'
+                window.alert(`A opção que você escolheu é ${masculina} então o valor da ${masculina} é R$100,00 reais`) 
                 break
             case 2 :
-                resultado = n1 * n2 
-                window.alert(`O resultado da multiplicação é ${resultado}`)
+                masculina = 'Suéter' 
+                window.alert(`A opção que você escolheu é ${masculina} então o valor do ${masculina} é R$90,00 reais`)
                 break
             default :
                 window.alert(`Opção inválida`)
                 break
         }
-    }else if (roupa = feminina) {
-        window.prompt(`Que tipo de roupa você pretende comprar ?`)
+    
+      
+    }else if (roupa == 'Feminina') {
+        window.alert(`Você escolheu a roupa Feminina`)
+
+        var opcao = Number(window.prompt('Escolha uma opção de roupa Feminina: \n [1]Vestido \n [2]Saia '))
+
+        switch (opcao) {
+            case 1 :
+                feminina = 'Vestido'
+                window.alert(`A opção que você escolheu é ${feminina} então o valor do ${feminina} é R$80,00 reais`)
+                break
+            case 2 :
+                feminina = 'Saia'
+                window.alert(`A opção que você escolheu é ${feminina} então o valor da ${feminina} é R$65,00 reais`)
+                break
+            default :
+                window.alert(`Opção inválida`)
+                break
+        }
     }else {
-        window.prompt(`Opção inválida`)
+        window.alert(`Opção inválida`)
     }
   
 }
