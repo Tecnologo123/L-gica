@@ -130,6 +130,7 @@ function calcular4() {
         var opcao = Number(window.prompt('Escolha uma opção de roupa Feminina: \n [1]Vestido \n [2]Saia '))
 
         switch (opcao) {
+
             case 1 :
                 feminina = 'Vestido'
                 window.alert(`A opção que você escolheu é ${feminina} então o valor do ${feminina} é R$80,00 reais`)
@@ -148,6 +149,68 @@ function calcular4() {
   
 }
 
+function somar() {
+    var soma = 0;
+    for (i=1; i<=10; i++){
+         var numero = Number(window.prompt('Digite um número:'))
+         soma = soma + numero
+         console.log(soma)
+   
+    }
+    window.alert(`A soma total é ${soma}`)
+    
+}
+
+function calcular() {
+    var soma = 0;
+    for (i=1; i<=6; i++){
+         var ganhobruto = Number(window.prompt('Digite o ganho bruto de cada mês:'))
+         soma = soma + ganhobruto
+         console.log(soma)
+    }
+    window.alert(`O ganho bruto semestral é ${soma}`)
+
+    var somagastos = 0;
+    for (i=1; i<=6; i++){
+         var gastosempresa = Number(window.prompt('Digite os gastos da empresa de cada mês: '))
+         somagastos = somagastos + gastosempresa
+         console.log(soma)
+
+    }
+    window.alert(`O gasto semestral é ${somagastos}`)
+
+    window.alert(`O saldo financeiro é ${soma - somagastos}`)
+
+    if (ganhobruto > gastosempresa) {
+        window.alert(`A empresa teve um ganho bruto semestral de ${ganhobruto}
+        reais ,ou seja, teve lucro.`)
+    }else if (ganhobruto < gastosempresa) {
+        window.alert(`A empresa teve um gasto semestral de ${gastosempresa}
+        reais ,ou seja, teve prejuízo.`)
+    }else {
+        window.alert(`A empresa não teve lucro nem prejuízo.`)
+    }
+}
+
+function somar2() {
+    var soma = 0
+    for (i=1; i<=5; i++){
+        var numero = Number(window.prompt('Digite um número:'))
+        soma = soma + numero
+        console.log(soma)
+
+    }
+    window.alert(`A soma total é ${numero}`)
+}
+
+function calcular_idade() {
+    for (i=1; i<=12; i++){
+        var idade = Number(window.prompt('Digite a sua idade:'))
+        s
+    }
+}
+
 // E - &&
 // OU - ||
 // <> - !=
+
