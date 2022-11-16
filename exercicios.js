@@ -163,8 +163,8 @@ function somar() {
 
 function calcular() {
     var soma = 0;
-    for (i=1; i<=6; i++){
-         var ganhobruto = Number(window.prompt('Digite o ganho bruto de cada mês:'))
+    for (i=1; i <=6; i++){
+         var ganhobruto = Number(window.prompt(`Digite o ganho bruto do ${i} mês:`))
          soma = soma + ganhobruto
          console.log(soma)
     }
@@ -172,7 +172,7 @@ function calcular() {
 
     var somagastos = 0;
     for (i=1; i<=6; i++){
-         var gastosempresa = Number(window.prompt('Digite os gastos da empresa de cada mês: '))
+         var gastosempresa = Number(window.prompt(`Digite os gastos da empresa do ${i} mês:`))
          somagastos = somagastos + gastosempresa
          console.log(soma)
 
@@ -181,12 +181,10 @@ function calcular() {
 
     window.alert(`O saldo financeiro é ${soma - somagastos}`)
 
-    if (ganhobruto > gastosempresa) {
-        window.alert(`A empresa teve um ganho bruto semestral de ${ganhobruto}
-        reais ,ou seja, teve lucro.`)
-    }else if (ganhobruto < gastosempresa) {
-        window.alert(`A empresa teve um gasto semestral de ${gastosempresa}
-        reais ,ou seja, teve prejuízo.`)
+    if (soma > somagastos) {
+        window.alert(`A empresa teve lucro.`)
+    }else if (soma < somagastos) {
+        window.alert(`A empresa teve prejuízo.`)
     }else {
         window.alert(`A empresa não teve lucro nem prejuízo.`)
     }
@@ -194,20 +192,47 @@ function calcular() {
 
 function somar2() {
     var soma = 0
-    for (i=1; i<=5; i++){
-        var numero = Number(window.prompt('Digite um número:'))
-        soma = soma + numero
+    var num1 = Number(window.prompt('Digite o primeiro número'))
+    var num2 = Number(window.prompt('Digite o segundo número')) 
+    for (i=num1; i<=num2; i++){
+        soma = soma + i
         console.log(soma)
 
     }
-    window.alert(`A soma total é ${numero}`)
+    window.alert(`A soma total é ${soma}`)
 }
 
 function calcular_idade() {
+    var soma  = 0
     for (i=1; i<=12; i++){
-        var idade = Number(window.prompt('Digite a sua idade:'))
-        s
+        var idade = Number(window.prompt(`Digite a idade da ${i} pessoa:`))
+        console.log(soma)
+
+    if (idade >= 18) {
+            window.alert(`${soma = soma + idade}`)
+    }else {
+            window.alert(`Opção inválida`)
     }
+    window.alert(`O total de pessoas que tem 18 anos ou mais é ${soma}`)    
+        
+    }  
+    
+}
+
+function executar() {
+    var i = 1;
+
+    while(i<5){
+        console.log("While - "+i)
+        i++;
+    }
+
+    do{
+        console.log("D-While - "+i)
+        i--;
+    }while(i>0);
+
+    console.log("Valor final - "+i)
 }
 
 // E - &&
