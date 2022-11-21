@@ -208,31 +208,32 @@ function calcular_idade() {
         var idade = Number(window.prompt(`Digite a idade da ${i} pessoa:`))
         console.log(soma)
 
-    if (idade >= 18) {
-            window.alert(`${soma = soma + idade}`)
-    }else {
-            window.alert(`Opção inválida`)
+        if (idade >= 18) {
+            window.alert(`${soma = soma + i}`)
+        }else if (idade>=18) {
+            window.alert(`É menor de idade`)
+        }else {
+            window.alert(`Não tem mais de 18 anos`)
+        }
     }
-    window.alert(`O total de pessoas que tem 18 anos ou mais é ${soma}`)    
-        
-    }  
-    
+    window.alert(`O total de pessoas que tem 18 anos ou mais é ${soma}`)
 }
 
 function executar() {
     var i = 1;
-
+ 
     while(i<5){
         console.log("While - "+i)
         i++;
     }
-
+ 
     do{
-        console.log("D-While - "+i)
+        console.log("Do-while - "+i)
         i--;
     }while(i>0);
-
+ 
     console.log("Valor final - "+i)
+   
 }
 
 // E - &&
