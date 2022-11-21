@@ -204,7 +204,7 @@ function somar2() {
 
 function calcular_idade() {
     var soma  = 0
-    for (i=1; i<=12; i++){
+    for (i=1; i <=12; i++){
         var idade = Number(window.prompt(`Digite a idade da ${i} pessoa:`))
         console.log(soma)
 
