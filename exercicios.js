@@ -233,7 +233,9 @@ function executar() {
     }while(i>0);
  
     console.log("Valor final - "+i)
-   
+
+
+
 }
 
 // E - &&
