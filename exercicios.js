@@ -238,13 +238,6 @@ function executar() {
 
 }
 
-function recuperacao() {
-    var nota = 7;
-
-    while (nota < 7)
-
-}
-
 // E - &&
 // OU - ||
 // <> - !=
