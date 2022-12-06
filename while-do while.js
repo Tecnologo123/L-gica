@@ -10,15 +10,15 @@ function recuperacao() {
 
     }
 
-    if (nota < 18) {
-        window.alert(`${soma = soma + 1}`)
-    }else if (idade>=7) {
-        window.alert(`O estudante não precisou fazer prova de recuperação`)
+    if (nota <7) {
+        window.alert(`${soma = soma + nota}`)
+    }else if (nota>=7) {
+        window.alert(`O estudante fez ${soma} provas de recuperação`)
     }else {
         window.alert(`Opção inválida`)
     }
 }
-window.alert(`O ${soma}`)
+
 
 
 
