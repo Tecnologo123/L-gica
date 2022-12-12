@@ -52,34 +52,23 @@ function voto() {
                 candidatos = 'Jean' 
                 window.alert(`Você vai votar no candidato ${candidatos}`)
                 break
+            case 0:
+                nenhumcandidato = 'Voto em branco'
+                window.alert(`Você escolheu a opção ${nenhumcandidato}`)
+                break
             default :
-                window.alert(`Opção inválida`)
+                window.alert(`Voto nulo`)
                 break
         }
 
-   }else if(codigo == 'Nenhum candidato') {
-            window.alert(`Você escolheu votar em Nenhum candidato`)
-
-            var opcao = Number(window.prompt('Escolha uma opção de Nenhum candidato : \n [0]Voto em branco \n [00]Voto nulo'))
-
-            switch (opcao) {
-                case 0:
-                    nenhumcandidato = 'Voto em branco'
-                    window.alert(`Você escolheu a opção ${nenhumcandidato}`)
-                    break
-                case 00:
-                    nenhumcandidato = 'Voto nulo'
-                    window.alert(`Você escolheu a opção ${nenhumcandidato}`)
-                    break
-                default :
-                    window.alert(`Opção inválida`)
-                    break
-            }
-   }else {
-       window.alert(`Opção inválida`)
-   }
+    }
 
    var pessoa = Number(window.prompt('Tem mais alguma pessoa para votar ?'))
+   var qtdVotos = 0
+
+   while (pessoa = 'Não')
+
+   var  
 
    
 
