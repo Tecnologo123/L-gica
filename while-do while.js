@@ -38,44 +38,48 @@ function opcoes() {
 function voto() {
 do{
     
+         var qtdeVotosDaniel = 0
+         var qtdeVotosJean = 0
+         var qtdeVotosemBranco = 0
+         var qtdeVotosNulo = 0  
          var opcao = Number(window.prompt('Escolha uma opção de Candidatos : \n [15]Daniel \n [75]Jean \n [0]Voto em branco \n [Outras coisas]Voto nulo'))
     
         switch (opcao) {
             case 15:
-                'Daniel'
-                window.alert(`Você vai votar no candidato ${`Daniel`}`)
-                qtdeVotosDaniel++ 
+                candidato = 'Daniel'
+                window.alert(`Você vai votar no candidato Daniel`)
+                qtdeVotosDaniel++
                 break
             case 75 :
-                'Jean' 
-                window.alert(`Você vai votar no candidato ${`Jean`}`)
+                candidato2 = 'Jean' 
+                window.alert(`Você vai votar no candidato Jean`)
                 qtdeVotosJean++
                 break
             case 0:
-                'Voto em branco'
-                window.alert(`Você escolheu a opção ${`Voto em branco`}`)
+                candidato3 = 'Voto em branco'
+                window.alert(`Você escolheu a opção Voto em branco`)
                 qtdeVotosemBranco++
                 break
             default :
                 window.alert(`Voto nulo`)
                 qtdeVotosNulo++ 
                 break
-        }
-        window.alert(`A quantidade de votos de Daniel é ${qtdeVotosDaniel}`)
 
-        window.alert(`A quantidade de votos de Jean é ${qtdeVotosJean}`)
-
-        window.alert(`A quantidade de votos em branco é ${qtdeVotosemBranco}`)
-
-        window.alert(`A quantidade de votos nulos é ${qtdeVotosNulo}`)
+        } 
 
    var pessoa = Number(window.prompt('Tem mais alguma pessoa para votar ?'))
-   var qtdVotos = 0
+
 
     }while (pessoa == 'Sim')
 
-   var  
- 
+    
+    window.alert(`A quantidade de votos de Daniel é ${qtdeVotosDaniel}`)
+
+    window.alert(`A quantidade de votos de Jean é ${qtdeVotosJean}`)
+
+    window.alert(`A quantidade de votos em branco é ${qtdeVotosemBranco}`)
+
+    window.alert(`A quantidade de votos nulos é ${qtdeVotosNulo}`)
 
 }
 
