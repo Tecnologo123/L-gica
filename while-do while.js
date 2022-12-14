@@ -36,12 +36,9 @@ function opcoes() {
 
 
 function voto() {
-    var codigo = (window.prompt('Qual vai ser o seu voto ?'))  
-
-    if (codigo == 'Candidatos') {
-        window.alert(`Você escolheu votar em Candidatos`)
+do{
     
-         var opcao = Number(window.prompt('Escolha uma opção de Candidatos : \n [15]Daniel \n [75]Jean'))
+         var opcao = Number(window.prompt('Escolha uma opção de Candidatos : \n [15]Daniel \n [75]Jean \n [0]Voto em branco \n [Outras coisas]Voto nulo'))
     
         switch (opcao) {
             case 15:
@@ -61,12 +58,11 @@ function voto() {
                 break
         }
 
-    }
 
    var pessoa = Number(window.prompt('Tem mais alguma pessoa para votar ?'))
    var qtdVotos = 0
 
-   while (pessoa = 'Não')
+    }while (pessoa == 'Sim')
 
    var  
 
